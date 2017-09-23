@@ -1,0 +1,119 @@
+<ion-content>
+  <!doctype html>
+  <html>
+  <head>
+    <title>我的合同</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  </head>
+  <body>
+  <div id="myct">
+    <header class="header icon_m">
+      <a href="javascript:void (0);" (click)="goToContractManage()" class="a_back"></a>
+      <h1><img src="assets/img/icon_panel.png" alt=""/>我的合同</h1>
+    </header>
+    <!-- header End -->
+
+    <article class="wrapper">
+      <div class="main">
+
+        <div class="nform">
+          <div class="wbox">
+            <label>合同名称：</label>
+            <div>
+              <input type="text" name="" placeholder=""/>
+            </div>
+          </div>
+
+          <div class="wbox date">
+            <label>履行期限：</label>
+            <div>
+              <input type="text" name="" placeholder="" class="txt_sdate"/><b>至</b>
+              <input type="text" name="" placeholder="" class="txt_edate"/>
+            </div>
+          </div>
+
+          <a href="javascript:void(0);" (click)="goToContractMineDetail(1)" class="a_search"></a>
+        </div>
+        <!-- spanel -->
+
+        <ul class="ul_squre clearfix">
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineFlowing()">
+              流转中
+              <i>2</i>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineReceiving()">
+              收/付款中
+              <i>2</i>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineFinished()">
+              已完成
+              <i>2</i>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineAll()">
+              全部合同
+              <i>2</i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="ul_2list">
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineDetail(1)">
+              <div>
+                <h3>华东空管通导运维平台系统技术服务中心平台</h3>
+                <p>2017年9月8日</p>
+              </div>
+              <span>待审核</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="javascript:void(0);" (click)="goToContractMineDetail(1)">
+              <div>
+                <h3>华东空管通导运维平台系统技术服务中心平台</h3>
+                <p>2017年9月8日</p>
+              </div>
+              <span>待审核</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineDetail(1)">
+              <div>
+                <h3>华东空管通导运维平台系统技术服务中心平台</h3>
+                <p>2017年9月8日</p>
+              </div>
+              <span>待审核</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);" (click)="goToContractMineDetail(1)">
+              <div>
+                <h3>华东空管通导运维平台系统技术服务中心平台</h3>
+                <p>2017年9月8日</p>
+              </div>
+              <span>待审核</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </article>
+    <!-- wrapper End -->
+  </div>
+  </body>
+  </html>
+</ion-content>

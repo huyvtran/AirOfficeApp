@@ -1,0 +1,111 @@
+<ion-content>
+  <!doctype html>
+  <html>
+  <head>
+    <title>流转登记</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  </head>
+  <body>
+  <div id="lzdj">
+    <header class="header icon_s">
+      <a href="javascript:void(0);" (click)="goToContractManage()" class="a_back"></a>
+      <h1><img src="assets/img/icon_lz.png" alt=""/><i>流转登记</i></h1>
+    </header>
+    <!-- header End -->
+
+    <nav class="tabs">
+      <a href="javascript:void(0);" class="active">收入合同</a>
+      <a href="javascript:void(0);" (click)="goToContractRegisterExpend()">支出合同</a>
+    </nav>
+    <!-- tabs -->
+
+    <article class="nwrapper white">
+      <div class="main">
+
+        <div class="nform">
+          <div class="wbox">
+            <label>合同编号：</label>
+            <div>
+              <input type="text" name="" placeholder=""/>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>合同名称：</label>
+            <div>
+              <input type="text" name="" placeholder="必填，输入"/>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>甲方：</label>
+            <div class="select">
+              <select>
+                <option>请选择</option>
+                <option>上海南广电子技术有限公司</option>
+                <option>上海民航华东空管工程技术有限公司</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>乙方：</label>
+            <div class="select">
+              <select>
+                <option>请选择</option>
+                <option>上海南广电子技术有限公司</option>
+                <option>上海民航华东空管工程技术有限公司</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>合同标的<br/>额(元)：</label>
+            <div>
+              <input type="text" name="" placeholder="必填，输入"/>
+            </div>
+          </div>
+
+          <div class="wbox date">
+            <label>履行期限：</label>
+            <div>
+              <input type="text" name="" placeholder="" class="txt_sdate"/><b>至</b>
+              <input type="text" name="" placeholder="" class="txt_edate"/>
+            </div>
+          </div>
+
+          <div class="wbox area">
+            <p>对方资信情况：</p>
+            <div>
+              <textarea style="height: 6rem;" placeholder="根据甲方或乙方内容自动跟随"></textarea>
+            </div>
+          </div>
+
+          <div class="wbox area">
+            <p>合同主要内容及有关说明：</p>
+            <div>
+              <textarea style="height: 10rem;"></textarea>
+            </div>
+          </div>
+
+          <h5>合同经办科室：<i>登录用户所在科室，系统自动添加</i></h5>
+
+          <div class="sign">
+            合同经办人签字：<img src="assets/img/signature.png" alt=""/>
+          </div>
+        </div>
+        <!-- nform -->
+
+      </div>
+    </article>
+    <!-- wrapper End -->
+
+    <footer class="footer">
+      <a href="javascript:;"><span>提交合同</span></a>
+      <a href="javascript:;"><span>上传<br/>原件</span></a>
+    </footer>
+  </div>
+  </body>
+  </html>
+</ion-content>

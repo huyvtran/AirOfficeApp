@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>签名板</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div id="signaturePadContainer" style="border: 1px solid #cccccc">
+    <signature-pad (onBeginEvent)="drawStart()"
+                   (onEndEvent)="drawComplete()"></signature-pad>
+  </div>
+  <button ion-button block (click)="saveSignature()">保存</button>
+  <button ion-button block (click)="clearSignaturePad()">清空</button>
+
+  <ion-card *ngIf="imgSrc != ''">
+    <ion-card-header>签名图片如下:</ion-card-header>
+    <ion-card-content>
+      <img src="{{imgSrc}}"/>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,82 @@
+<ion-content>
+  <!doctype html>
+  <html>
+  <head>
+    <title>移动办公管理系统</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  </head>
+  <body>
+  <div id="setting">
+    <header class="header">
+      <a href="javascript:void(0);" (click)="goToHomePage()" class="a_back"></a>
+      <h1>
+        <img src="assets/img/logo.png" alt=""/>
+        移动办公管理系统
+      </h1>
+    </header>
+    <!-- header End -->
+
+    <article class="wrapper">
+
+      <div class="main">
+
+        <h2 class="setting_title">
+          设置中心
+        </h2>
+
+        <ul class="ul_setting">
+          <li>
+            <a href="javascript:void(0);" (click)="goToPersonCenter()">
+              <img src="assets/img/icon_vip_1.png" alt=""/>
+              个人中心
+            </a>
+          </li>
+
+          <li>
+            <img src="assets/img/icon_vip_2.png" alt=""/>
+            办公用品
+
+            <span class="toggle on"><i></i></span>
+          </li>
+
+          <li>
+            <img src="assets/img/icon_vip_3.png" alt=""/>
+            合同管理
+
+            <span class="toggle on"><i></i></span>
+          </li>
+
+          <li>
+            <img src="assets/img/icon_vip_4.png" alt=""/>
+            用车管理
+
+            <span class="toggle on"><i></i></span>
+          </li>
+
+          <li>
+            <img src="assets/img/icon_vip_5.png" alt=""/>
+            订餐管理
+
+            <span class="toggle on"><i></i></span>
+          </li>
+
+          <li>
+            <img src="assets/img/icon_vip_6.png" alt=""/>
+            问卷调查
+
+            <span class="toggle off"><i></i></span>
+          </li>
+        </ul>
+
+      </div>
+
+    </article>
+    <!-- wrapper End -->
+
+    <a href="javascirpt:void(0);" class="a_loginout" (click)="logOut()">退出登录</a>
+
+  </div>
+  </body>
+  </html>
+</ion-content>

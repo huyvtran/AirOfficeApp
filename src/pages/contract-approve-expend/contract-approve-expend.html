@@ -1,0 +1,137 @@
+<ion-content>
+  <!doctype html>
+  <html>
+  <head>
+    <title>合同审批-支出合同</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/mobiscroll.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script>
+      $(function () {
+
+        //初始化日期插件
+        setDateTime(".txt_sdate", "date");
+
+        //初始化日期插件
+        setDateTime(".txt_edate", "date");
+
+      });
+    </script>
+  </head>
+  <body>
+  <div id="htsp">
+    <header class="header icon_s">
+      <a href="javascript:void(0);" (click)="goToContractApprove()" class="a_back"></a>
+      <h1><img src="assets/img/icon_2.png" alt=""/><i>合同审批</i></h1>
+    </header>
+    <!-- header End -->
+
+    <nav class="tabs">
+      <a href="javascript:void(0);" (click)="goToContractApproveIncome()">收入合同</a>
+      <a href="javascript:void(0);" class="active">支出合同</a>
+    </nav>
+    <!-- tabs -->
+
+    <article class="nwrapper white">
+      <div class="main">
+
+        <div class="nform">
+          <div class="wbox">
+            <label>合同编号：</label>
+            <div>
+              <input type="text" name="" placeholder=""/>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>合同名称：</label>
+            <div>
+              <input type="text" name="" placeholder="必填，输入"/>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>对应收入<br/>合同：</label>
+            <div class="select">
+              <select>
+                <option>请选择</option>
+                <option>Test</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>甲方：</label>
+            <div class="select">
+              <select>
+                <option>请选择</option>
+                <option>上海南广电子技术有限公司</option>
+                <option>上海民航华东空管工程技术有限公司</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>乙方：</label>
+            <div class="select">
+              <select>
+                <option>请选择</option>
+                <option>上海南广电子技术有限公司</option>
+                <option>上海民航华东空管工程技术有限公司</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="wbox">
+            <label>合同标的<br/>额(元)：</label>
+            <div>
+              <input type="text" name="" placeholder=""/>
+            </div>
+          </div>
+
+          <div class="wbox date">
+            <label>履行期限：</label>
+            <div>
+              <input type="text" name="" placeholder="" class="txt_sdate"/><b>至</b>
+              <input type="text" name="" placeholder="" class="txt_edate"/>
+            </div>
+          </div>
+
+          <div class="wbox area">
+            <p>对方资信情况：</p>
+            <div>
+              <textarea style="height: 6rem;" placeholder="根据甲方或乙方内容自动跟随"></textarea>
+            </div>
+          </div>
+
+          <div class="wbox area">
+            <p>合同主要内容及有关说明：</p>
+            <div>
+              <textarea style="height: 10rem;"></textarea>
+            </div>
+          </div>
+
+          <h5>合同经办科室：<i>登录用户所在科室，系统自动添加</i></h5>
+
+          <div class="sign">
+            合同经办人签字：<img src="assets/img/signature.png" alt=""/>
+          </div>
+        </div>
+        <!-- nform -->
+
+
+      </div>
+    </article>
+    <!-- wrapper End -->
+
+    <footer class="footer">
+      <a href="javascript:;"><span>通过</span></a>
+      <a href="javascript:;"><span>不通过</span></a>
+      <a href="javascript:;"><span>查看<br/>原件</span></a>
+    </footer>
+  </div>
+  </body>
+  </html>
+</ion-content>
